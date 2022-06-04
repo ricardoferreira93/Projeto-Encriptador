@@ -59,12 +59,19 @@
  hr {
      margin-top: 20px;
  }
- #alerta {
+
+ #alerta .alerta {
+    margin-left: 30px;
+ }
+ #alerta  {
+     margin-left: 0px;
      margin-top: -30px;
      margin-bottom: 0px;
  }
- #alerta2 {
-     display: none;
+ #alerta1 {
+     text-align: center;
+     max-width: 400px;
+     line-height: 20px;;
  }
  #txtTec {
      padding: 20px;
