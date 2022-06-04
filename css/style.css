@@ -5,7 +5,9 @@ body, textarea, button{
 }
 
 body {
-    background-image: url(../img/criptografia.jpg);
+    background-image: url(../img/criptografia3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #cabecalho picture img {
