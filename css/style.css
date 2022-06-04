@@ -95,7 +95,7 @@ textarea {
 
 button { 
     background-image: linear-gradient(#eb0e63, #0A3871) ;
-    font-weight: bold;
+    font-weight: 500;
     border: none;
     color: #ffffff;
     padding: 10px 20px;
@@ -129,7 +129,7 @@ button:hover {
      justify-content: center;
      margin-top: 20px;
      color: #fff;
-     font-weight: 600;
+     font-weight: 500;
 }
 
 #meusLinks {
