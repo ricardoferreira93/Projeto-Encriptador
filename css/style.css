@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body, textarea, button{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-image: url(../img/criptografia.jpg);
+}
+
+#cabecalho picture img {
+    width: 40px;
+    height: 40px;
+}
+
+#cabecalho {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: linear-gradient(#eb0e63, #0A3871) ;
+    justify-items:center;
+    align-items: center;
+    
+}
+
+.typing-animation {    
+    animation: blinkCursor 1s 400ms steps(100) normal infinite, typing 4s steps(100) infinite 5s;
+}
+
+#titulo {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border-right: 2px solid rgba(255, 255, 255, 255);
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    font-size: 1.5em;
+}
+
+@keyframes typing {
+    from{
+        width: 0em;
+    }
+    to {
+        width: 21.5rem;
+    }
+}
+
+@keyframes blinkCursor {
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+#txt {
+    display: grid;
+    grid-template-columns:1fr 4fr 4fr 1fr;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#txt .mensagem {
+    background-image: url("../img/lupa1.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+textarea {
+    width: 90%;
+    height: 100%;
+    margin-bottom: 30px;
+    resize: none;
+    color: #0A3871;
+    outline: none;
+    /*background-color: transparent;*/
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 5px;
+    opacity: 0.9;        
+}
+
+
+#botoes{
+    text-align: center;  
+    margin-top: 20px;
+}
+
+button { 
+    background-image: linear-gradient(#eb0e63, #0A3871) ;
+    font-weight: bold;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 0 1px #930;
+}
+
+button:active {
+    box-shadow: 0 0 0 0 #930, inset 3px 3px 3px #930;
+    transform: translate(3px, 3px);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#alerta1 .alerta {
+    color: #e40101;
+}
+#alerta1 {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+     color: #fff;
+     font-weight: 600;
+}
+
+#meusLinks {
+    padding: 30px 0 30px;
+    margin-top: 70px;
+    display: flex;
+    background-image: linear-gradient(#eb0e63, #0A3871) ;
+    justify-content: center;
+    grid-gap:10%;
+}
+
+
+#meusLinks picture i {
+    font-size: 1.6em;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    color: #FFF;
+    padding: 8px;
+}
+
+#meusLinks .github {
+    color: #171515;
+}
+
+#meusLinks .github:hover {
+    background-color: #171515;
+    color: #FFF;
+}
+
+#meusLinks .linkedin {
+    color: #0a66c2;
+}
+
+#meusLinks .linkedin:hover {
+    background-color: #0a66c2;
+    color: #FFF;
+}

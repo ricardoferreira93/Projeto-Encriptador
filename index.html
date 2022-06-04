@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Maicon Monteiro">
+        <title>Encriptador de textos</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
+        <script src="https://kit.fontawesome.com/0c3027aabd.js" crossorigin="anonymous" defer></script>
+        <link rel="icon" type="image/x-icon" href="./img/cadeadoaberto.png">
+    
+    </head>
+
+<body>
+    <main>
+        <header>
+            <div id="cabecalho">                    
+                    <picture>
+                        <a href="https://www.alura.com.br/oracle-next-education"><img src="./img/cadeadoaberto.png" class="media-object  img-responsive img-thumbnail"></a>
+                    </picture>
+                </a>
+                <div id="th1"><h2 class="typing-animation" id="titulo">Encriptador de Textos</h2></div>
+                </a>                    
+                    <picture>
+                        <a href="https://www.alura.com.br/oracle-next-education"><img src="./img/cadeadofechado.png" class="media-object  img-responsive img-thumbnail"></a>                        
+                    </picture>
+            </div>
+        </header>        
+        <div id="aviso">&nbsp;</div>
+            <div id="txt">
+                <div></div>
+                <div>
+                    <textarea class="input-texto" rows="15" id="entrada" placeholder="Digite o texto aqui" autofocus="true" required></textarea>
+                </div>
+                <div>
+                    <textarea readonly class="mensagem" rows="15" id="mensagem" placeholder="Saída Criptografada" ></textarea>
+                </div>
+                <div></div>
+            </div>
+            <div id="troca">
+                <div id="alerta">
+                    <div id="alerta1"><i class="fa-solid fa-circle-exclamation fa-2x alerta" ></i>
+                        </i><p>&nbsp;Use apenas letras minúsculas, sem acentos e caracteres especiais </p>
+                    </div>
+            <div id="botoes">
+                <button onclick="btnEncriptar()" class="encriptar">criptografar</button>
+                <button onclick="btnDesencriptar()" class="desencriptar">descriptografar</button>
+                <button id="idBotao" onclick="copiar()">copia texto</button>
+                <button onclick="btnLimpar()" class="limpar">Limpar</button>
+            </div>
+    <footer id="meusLinks">
+        <picture>
+            <a href="#"><i class="fa-brands fa-github media-object github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin linkedin media-object linkedin"></i></a>
+        </picture>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    
+
+    </main>
+    
+</body>
+
+</html>
