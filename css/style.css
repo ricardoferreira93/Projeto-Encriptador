@@ -60,10 +60,13 @@ body {
 }
 
 #txt {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-template-columns:1fr 4fr 4fr 1fr;
     text-align: center;
     margin-top: 20px;
+    
     
 }
 
@@ -71,11 +74,13 @@ body {
     background-image: url("../img/lupa1.png");
     background-repeat:no-repeat;
     background-position: center center;
+    
+    
 }
 
 textarea {
-    width: 90%;
-    height: 100%;
+    width: 400px;
+    height: 200px;
     margin-bottom: 30px;
     resize: none;
     color: #0A3871;
@@ -84,7 +89,10 @@ textarea {
     background-repeat: no-repeat;
     background-position: right;
     border-radius: 5px;
-    opacity: 0.9;        
+    opacity: 0.9;
+    margin: 0 0 0 10px;
+    
+            
 }
 
 
@@ -132,9 +140,9 @@ button:hover {
      font-weight: 500;
 }
 
-#meusLinks {
+footer {
     padding: 30px 0 30px;
-    margin-top: 70px;
+    margin-top: 10%;
     display: flex;
     background-image: linear-gradient(#eb0e63, #0A3871) ;
     justify-content: center;
@@ -142,7 +150,7 @@ button:hover {
 }
 
 
-#meusLinks picture i {
+footer picture i {
     font-size: 1.6em;
     background-color: #fff;
     border-radius: 20px;
@@ -151,20 +159,20 @@ button:hover {
     padding: 8px;
 }
 
-#meusLinks .github {
+footer .github {
     color: #171515;
 }
 
-#meusLinks .github:hover {
+footer .github:hover {
     background-color: #171515;
     color: #FFF;
 }
 
-#meusLinks .linkedin {
+footer .linkedin {
     color: #0a66c2;
 }
 
-#meusLinks .linkedin:hover {
+footer .linkedin:hover {
     background-color: #0a66c2;
     color: #FFF;
 }
